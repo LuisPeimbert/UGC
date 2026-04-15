@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UGC Universidad</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./src/styles.css">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body class="bg-zinc-950">
     <div id="root"></div>
-    <script type="module" src="./src/Codigo2.jsx"></script>
+
+    <script type="text/babel" data-type="module">
+      import React from 'https://esm.sh/react';
+      import ReactDOM from 'https://esm.sh/react-dom/client';
+      import App from './src/Codigo2.jsx';
+
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(<App />);
+    </script>
 </body>
 </html>
