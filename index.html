@@ -7,15 +7,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
-<body class="bg-zinc-950">
+<body class="bg-[#F8F6F2]">
     <div id="root"></div>
 
     <script type="text/babel" data-type="module">
       import React, { useState, useEffect, useRef } from 'https://esm.sh/react';
       import ReactDOM from 'https://esm.sh/react-dom/client';
-
-      // Importamos el contenido de tu archivo Codigo2.jsx
-      // Nota: Si esto falla, es por las rutas de las imágenes dentro de Codigo2.jsx
+      
+      // Aquí jalamos tu archivo que está dentro de la carpeta src
       import App from './src/Codigo2.jsx';
 
       const root = ReactDOM.createRoot(document.getElementById('root'));
