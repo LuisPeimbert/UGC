@@ -1,9 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import MiLogo from "./logo.png";
-import imagenHero1 from "./hero1.webp";
-import imagenHero2 from "./hero2.webp";
-import imagenHero3 from "./hero3.webp";
-import imagenHero4 from "./hero4.webp";
 
 /* ─── GOOGLE FONTS ─────────────────────────────────────────────────────────── */
 const FontLink = () => (
@@ -203,10 +198,10 @@ const becas = [
 const empresas = ["COPPEL","CULIACÁN ROJO","DESPACHOS JURÍDICOS ASOCIADOS","SINALOA FRESH","GRUPO BAFAR","H. AYUNTAMIENTO DE CULIACÁN","FENIX CONTADORES","IMPORTADORA DEL PACÍFICO"];
 
 const heroSlides = [
-  { img: imagenHero1, tag:"20 años formando líderes",      title:"Tu futuro\nempieza aquí",                   sub:"Estudia sin dejar de trabajar con horarios flexibles diseñados para ti." },
-  { img: imagenHero2, tag:"Educación accesible",           title:"Calidad universitaria\nal alcance de todos", sub:"Licenciaturas, maestrías y doctorado con colegiaturas accesibles." },
-  { img: imagenHero3, tag:"Campus Culiacán",               title:"Un campus\npensado para ti",                sub:"Instalaciones modernas y un ambiente que impulsa tu desarrollo." },
-  { img: imagenHero4, tag:"Comunidad UGC",                 title:"Forma parte de\nnuestra comunidad",         sub:"Únete a miles de egresados que ya transformaron su vida profesional." },
+  { img: "./src/hero1.webp", tag:"20 años formando líderes",      title:"Tu futuro\nempieza aquí",                   sub:"Estudia sin dejar de trabajar con horarios flexibles diseñados para ti." },
+  { img: "./src/hero2.webp", tag:"Educación accesible",           title:"Calidad universitaria\nal alcance de todos", sub:"Licenciaturas, maestrías y doctorado con colegiaturas accesibles." },
+  { img: "./src/hero3.webp", tag:"Campus Culiacán",               title:"Un campus\npensado para ti",                sub:"Instalaciones modernas y un ambiente que impulsa tu desarrollo." },
+  { img: "./src/hero4.webp", tag:"Comunidad UGC",                 title:"Forma parte de\nnuestra comunidad",         sub:"Únete a miles de egresados que ya transformaron su vida profesional." },
 ];
 
 // ─── Initial blog posts ───────────────────────────────────────────────────────
@@ -265,7 +260,7 @@ function Navbar({ currentPage, setPage }) {
     <nav style={{ position:"fixed", top:0, left:0, right:0, zIndex:1000, background: scrolled ? "rgba(92,15,26,0.98)" : "rgba(92,15,26,0.90)", backdropFilter:"blur(14px)", borderBottom: scrolled ? "1px solid rgba(184,131,58,0.25)" : "none", transition:"all 0.35s ease" }}>
       <div style={{ maxWidth:1280, margin:"0 auto", padding:"0 32px", display:"flex", alignItems:"center", justifyContent:"space-between", height:76 }}>
         <button onClick={()=>setPage("home")} style={{ background:"none", border:"none", cursor:"pointer", display:"flex", alignItems:"center" }}>
-          <img src={MiLogo} alt="UGC" style={{ height:52, width:"auto" }} />
+          <img src="./src/logo.png" alt="UGC" style={{ height:52, width:"auto" }} />
         </button>
 
         <div className="nav-links" style={{ display:"flex", gap:2, alignItems:"center" }}>
